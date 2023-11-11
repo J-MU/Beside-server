@@ -15,4 +15,7 @@ public class QuizUsersMapping {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "quiz_id")
     private Quiz quiz;
+
+    private int correctCount;
+    private int wrongCount;
 }

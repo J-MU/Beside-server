@@ -17,4 +17,6 @@ public class Quiz {
     private LocalDate endDate;
     @OneToMany(mappedBy = "quiz")
     private List<Question> questions;
+    @OneToMany(mappedBy = "quiz")
+    private List<QuizUsersMapping> quizUsersMappings;
 }
